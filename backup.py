@@ -13,12 +13,12 @@ def create_scp_client(host, port, username, password):
 def main():
     router_ip = "192.168.1.1"
     server_ip = "192.168.1.2"
-    router_username = "root"
-    router_password = "indians14"
-    server_username = "Danny"
-    server_password = "Indians14@"
+    router_username = "router_username"
+    router_password = "router_assword"
+    server_username = "server_username"
+    server_password = "servicer password""
     server_path = r"C:/Scripts/openwrt"
-    router_port = 222  # Update to the new port
+    router_port = 22  # Update to the new port
 
     files_to_copy = ["/etc", "/overlay"]
     tar_cmd = f"tar -czf /tmp/openwrt_backup.tar.gz {' '.join(files_to_copy)}"
